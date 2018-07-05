@@ -8,9 +8,6 @@ body {
 .site-header{
 	position: relative;
 }
-.navbar button{
-	background-color: #fff;
-}
 .navbar .navbar-nav li a{
 	color: #fff !important;
 	font-size: 30px;
@@ -18,28 +15,119 @@ body {
 .navbar {
   min-height: 80px;
 }
-
-.navbar-brand {
-  padding: 0 15px;
-  height: 80px;
-  line-height: 80px;
-}
-
-.navbar-toggle {
-  /* (80px - button height 34px) / 2 = 23px */
-  margin-top: 23px;
-  padding: 9px 10px !important;
-}
-
-@media (min-width: 768px) {
-  .navbar-nav > li > a {
-    /* (80px - line-height of 27px) / 2 = 26.5px */
-    padding-top: 26.5px;
-    padding-bottom: 26.5px;
-    line-height: 27px;
-  }
+	.navbar-brand {
+  	padding: 0 15px;
+  	height: 80px;
+  	line-height: 80px;
 }
 .carousel-inner img{
 	width: 100%;
 	height: 900px;
+}
+.main-raised {
+    margin: -60px 30px 0;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+}
+.main {
+    background: #fff;
+    position: relative;
+    z-index: 3;
+}
+.section, .section-image {
+    background-position: 50%;
+    background-size: cover;
+}
+.section {
+    padding: 70px 0;
+}
+footer {
+    padding: .9375rem 0;
+    text-align: center;
+    display: flex;
+}
+footer .pull-center {
+    display: inline-block;
+    float: none;
+}
+footer ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li {
+    display: inline-block;
+}
+.footer-black {
+    background: radial-gradient(ellipse at center,#585858 0,#232323 100%);
+    background-size: 550% 450%;
+}
+.footer-black a {
+    color: #fff;
+    opacity: .86;
+}
+footer ul li a, footer ul li a:hover {
+    text-decoration: none;
+}
+footer ul li a {
+    color: inherit;
+    padding: .9375rem;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+}
+footer .footer-brand {
+    text-decoration: none;
+    float: left;
+    height: 50px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: -15px;
+}
+.float-right {
+    float: right !important;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+footer .social-buttons .btn, footer .social-buttons a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.btn.btn-fab, .btn.btn-just-icon {
+    font-size: 24px;
+    height: 41px;
+    min-width: 41px;
+    width: 41px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    line-height: 41px;
+}
+.btn.btn-default.btn-link, .btn.btn-link {
+    background-color: transparent;
+    color: #999;
+    box-shadow: none;
+}
+.ripple-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    border-radius: inherit;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
