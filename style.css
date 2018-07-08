@@ -2,28 +2,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-*{
-	font-family: 'Quicksand';
-}
-.site-header{
-	position: relative;
-}
-.navbar .navbar-nav li a{
-	color: #fff !important;
-	font-size: 30px;
-}
-.navbar {
-  min-height: 80px;
-}
-	.navbar-brand {
-  	padding: 0 15px;
-  	height: 80px;
-  	line-height: 80px;
-}
-.carousel-inner img{
-	width: 100%;
-	height: 900px;
-}
 .main-raised {
     margin: -60px 30px 0;
     border-radius: 6px;
@@ -41,15 +19,85 @@ body {
 .section {
     padding: 70px 0;
 }
-footer {
-    padding: .9375rem 0;
-    text-align: center;
-    display: flex;
+*{
+	font-family: 'Quicksand';
 }
-footer .pull-center {
-    display: inline-block;
-    float: none;
+.site-header{
+	position: relative;
 }
+.navbar .navbar-nav li a{
+	color: #fff;
+	font-size: 20px;
+}
+.navbar {
+  min-height: 40px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.carousel-inner img{
+	background-size: cover;	
+	width: 100%;
+	height: 800px;
+}
+.carousel-caption {
+	text-align: left;
+	left: 0;
+	top: 2%;
+	width: 50%;
+	margin-left: 15%
+}
+.carousel-caption h1{
+	font-size: 5em;
+}
+
+.btn-outline-success {
+	color: #fff;
+	border-color: #fff;
+	border-radius: 20px;
+}
+
+.zoom{
+	position: relative;
+	overflow: hidden;
+}
+
+.zoom:hover img {
+	transform: scale(1.1);
+	-moz-transform : scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+
+.zoom img{
+	transition: all 0.3s;
+	-moz-transition : all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+.modal-content{
+	align-items: center;
+}
+.btn-fb{
+	background-color: #0000fc;
+	color: #fff;
+	width: 200px;
+}
+
+.btn-light{
+	width: 200px;
+}
+
+.btn-dark{
+	border-radius: 20px;
+	border-color: transparent;
+}
+footer .copyright {
+    padding: 15px 0;
+}
+
 footer ul {
     margin-bottom: 0;
     padding: 0;
@@ -58,14 +106,7 @@ footer ul {
 footer ul li {
     display: inline-block;
 }
-.footer-black {
-    background: radial-gradient(ellipse at center,#585858 0,#232323 100%);
-    background-size: 550% 450%;
-}
-.footer-black a {
-    color: #fff;
-    opacity: .86;
-}
+
 footer ul li a, footer ul li a:hover {
     text-decoration: none;
 }
@@ -79,40 +120,7 @@ footer ul li a {
     position: relative;
     display: block;
 }
-footer .footer-brand {
-    text-decoration: none;
-    float: left;
-    height: 50px;
-    padding: 15px;
-    font-size: 18px;
-    line-height: 20px;
-    margin-left: -15px;
-}
-.float-right {
-    float: right !important;
-}
-.btn:not(:disabled):not(.disabled) {
-    cursor: pointer;
-}
-footer .social-buttons .btn, footer .social-buttons a {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.btn.btn-fab, .btn.btn-just-icon {
-    font-size: 24px;
-    height: 41px;
-    min-width: 41px;
-    width: 41px;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    line-height: 41px;
-}
-.btn.btn-default.btn-link, .btn.btn-link {
-    background-color: transparent;
-    color: #999;
-    box-shadow: none;
-}
+
 .ripple-container {
     position: absolute;
     top: 0;
