@@ -1,44 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Gudang Bimbel</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/mdb.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <title>Gudang Bimbel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
+
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-	  <a class="navbar-brand" href="index.html"><img src="img/logo.png" width=200></a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-	    <ul class="navbar-nav">
-	      <li class="nav-item active">
-	        <a class="nav-link ml-3" href="#">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link ml-3" href="#">Link</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link ml-3" href="#">Link</a>
-	      </li>
-	      <li class="dropdown nav-item">
-                                            <a href="#pablo" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
-                                                <div class="profile-photo-small">
-                                                    <img src="assets/img/faces/avatar.jpg" alt="Circle Image" class="rounded-circle img-fluid">
-                                                </div>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <h6 class="dropdown-header">Dropdown header</h6>
-                                                <a href="#pablo" class="dropdown-item">Me</a>
-                                                <a href="#pablo" class="dropdown-item">Settings and other stuff</a>
-                                                <a href="#pablo" class="dropdown-item">Sign out</a>
-                                            </div>
-                                        </li>
-	    </ul>
-	  </div>
-	</nav>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html"><img src="img/logo.png" width=150></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link ml-3" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-3" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-3" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-3 mr-3" href="#">Link</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="img-rounded profile-img"></div>
+                       <span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="profil.html">Halaman Profil</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="index.html">Log Out</a>
+                    </div>
+                </li>
+            </ul>  
+      
+</div>
+</nav>
+
+	<div class="profile-container container col-md-6 col-sm-6 col-xs-12">
+		<div class="col-xs-12">
+			<h3 class="section-title">Profil</h3>
+		</div> 
+		<div class="profile-header">
+			<div class="profile-picture" style="background-image: url(img/user.png);"></div> 
+			<div class="profile-data-head">
+				<p>Bolot Telli</p> 
+				<p>Laki-Laki</p> 
+				<p>09 Jul 2018</p>
+			</div> 
+			<div class="profile-header-edit-container visible-lg">
+				<a href="editprofile.html" class="btn btn-outline-dark btn-profile">Edit Profile</a> 
+				<br>
+				<div style="padding: 5px;"></div>
+			</div>
+		</div> 
+		<div class="profile-caption">
+			<table class="table borderless">
+				<tbody>
+					<tr>
+						<td class="table-title">Telepon</td> 
+						<td>085555444667</td>
+					</tr> 
+					<tr>
+						<td class="table-title">E-mail</td> 
+						<td>bolotelli.mb45@gmail.com</td>
+					</tr>
+					<tr>
+						<td class="table-title">Alamat</td> 
+						<td>Jl. Godean KM 5, Sleman, Yogyakarta</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+<footer class="footer"  data-background-color="black">
+  <div class="container">
+    <nav class="float-left">
+      <ul>
+        <li>
+          <a href="">
+              Cara
+          </a>
+        </li>
+        <li>
+          <a href="">
+              Tentang Kami
+          </a>
+        </li>
+        <li>
+          <a href="">
+              Privacy
+          </a>
+        </li>
+        <li>
+          <a href="">
+              Licenses
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright float-right">
+        © 2018, Gudang Bimbel
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
 </html>
