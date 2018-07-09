@@ -22,12 +22,14 @@ body {
 *{
 	font-family: 'Quicksand';
 }
+a{
+	text-decoration: none;
+}
 .site-header{
 	position: relative;
 }
 .navbar .navbar-nav li a{
-	color: #fff;
-	font-size: 20px;
+	font-size: 15px;
 }
 .navbar {
   min-height: 40px;
@@ -38,11 +40,18 @@ body {
   height: 40px;
   line-height: 40px;
 }
-
+.profile-img{
+    margin-right: 5px;
+    float: left;
+    background: url(img/user.png) 50% 50% no-repeat; /* 50% 50% centers image in div */
+    background-size: auto 100%; /* Interchange this value depending on prefering width vs. height */
+    width: 30px;
+    height: 30px;
+}
 .carousel-inner img{
 	background-size: cover;	
 	width: 100%;
-	height: 800px;
+	height: 565px;
 }
 .carousel-caption {
 	text-align: left;
@@ -78,16 +87,39 @@ body {
 	-webkit-transition: all 0.3s;
 }
 .modal-content{
-	align-items: center;
+	border-radius: 0;
+	border: 1px solid #27ab27; 
 }
 .btn-fb{
-	background-color: #0000fc;
+	width: 75%;
+	margin: 0 auto auto;
+	background-color: #3b5998;
 	color: #fff;
-	width: 200px;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.separator{
+    width: 75%;
+    margin: 5px auto;
+}
+.strike{
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.btn-light{
-	width: 200px;
+.btn-google {
+    width: 75%;
+    margin: 0 auto auto;
+    background-color: #e04050;
+    color: #fff;
+    padding: 9px 15px 8px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .btn-dark{
@@ -138,4 +170,56 @@ footer ul li a {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+.section-title {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.h3, h3 {
+    font-size: 24px;
+}
+.profile-header {
+    padding: 0 15px;
+    border-bottom: 1px solid #eee;
+}
+.profile-picture {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 15px 15px 0;
+    background-size: cover;
+    background-position: 50%;
+}
+.profile-data-head {
+    display: inline-block;
+    height: 120px;
+    vertical-align: top;
+}
+.profile-header-edit-container {
+    width: auto;
+    float: right;
+}
+.visible-lg {
+    display: block;
+}
+.profile-caption {
+    padding: 0 15px;
+    border-bottom: 1px solid #eee;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+table {
+    background-color: transparent;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.table-title {
+    width: 115px;
+    color: #aaa;
 }
