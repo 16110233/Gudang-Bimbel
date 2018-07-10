@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Pacifico');
 body {
 	margin: 0;
 	padding: 0;
@@ -21,7 +22,7 @@ body {
     padding: 10px 0;
 }
 *{
-	font-family: 'Quicksand';
+	font-family: 'Bitter', serif;
 }
 a{
 	text-decoration: none;
@@ -55,6 +56,7 @@ a{
 	height: auto;
 }
 .carousel-caption {
+	font-family: 'Pacifico', cursive;
 	text-align: left;
 	color: #fff68f;
 	left: 0;
