@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Gudang Bimbel</title>
+  <title>Edit Profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -38,51 +38,81 @@
             <span class="caret"></span>
         </a>
           <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="profil.html">Halaman Profil</a>
-              <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="index.html">Keluar</a>
+             <a class="dropdown-item" href="profil.html">Halaman Profil</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="index.html">Log Out</a>
           </div>
       </li>
     </ul>  
-  </div>
+      
+</div>
 </nav>
-	
-	<div class="profile-container container col-md-6 col-sm-6 col-xs-12">
-		<div class="col-xs-12">
-			<h3 class="section-title">Profil</h3>
-		</div> 
-		<div class="profile-header">
-			<div class="profile-picture" style="background-image: url(img/user.png);"></div> 
-			<div class="profile-data-head">
-				<p>Bolot Telli</p> 
-				<p>Laki-Laki</p> 
-				<p>09 Jul 2018</p>
-			</div> 
-			<div class="profile-header-edit-container visible-lg">
-				<a href="editprofile.html" class="btn btn-outline-secondary btn-profile">Edit Profile</a> 
-				<br>
-				<div style="padding: 5px;"></div>
-			</div>
-		</div> 
-		<div class="profile-caption">
-			<table class="table borderless">
-				<tbody>
-					<tr>
-						<td class="table-title">Telepon</td> 
-						<td>085555444667</td>
-					</tr> 
-					<tr>
-						<td class="table-title">E-mail</td> 
-						<td>bolotelli.mb45@gmail.com</td>
-					</tr>
-					<tr>
-						<td class="table-title">Alamat</td> 
-						<td>Jl. Godean KM 5, Sleman, Yogyakarta</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
+
+<div class="profile-container container col-md-6 col-sm-6 col-xs-12">
+    <div class="col-xs-12">
+      <h3 class="section-title">Edit Profil</h3>
+    </div> 
+
+  <form>
+    <div class="form-row">
+      <div class="col-md-6 bunder">
+        <div class="col-md-12 col-xs-12 btn-reset-container">
+          <button type="button" class="btn btn-dark">Ganti Foto</button>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Nama</label>
+        <input type="text" class="form-control" placeholder="Tulis Nama Anda">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Telpon</label>
+        <input type="text" class="form-control" placeholder="Tulis Telepon Anda">
+      </div>
+    </div>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Jenis Kelamin</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">
+              Laki - Laki
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              Perempuan
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-row">
+      <div class="form-group col-md-6 ">
+        <label>Tanggal Lahir</label>
+        <input id="date" type="date">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 ">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="Tulis Email Anda">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 ">
+        <label>Alamat</label>
+        <input type="text" class="form-control" placeholder="Tulis Alamat Anda">
+      </div>
+    </div>
+    
+    <a href="profil.html" type="submit" class="btn btn-primary">Simpan</a>
+  </form>
+</div>
+
 
 
 <footer class="footer"  data-background-color="black">

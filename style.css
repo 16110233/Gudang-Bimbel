@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Pacifico');
 body {
 	margin: 0;
 	padding: 0;
+	padding-top: 55px;
 }
 .main-raised {
     margin: -60px 30px 0;
@@ -17,10 +19,10 @@ body {
     background-size: cover;
 }
 .section {
-    padding: 70px 0;
+    padding: 10px 0;
 }
 *{
-	font-family: 'Quicksand';
+	font-family: 'Bitter', serif;
 }
 a{
 	text-decoration: none;
@@ -51,12 +53,14 @@ a{
 .carousel-inner img{
 	background-size: cover;	
 	width: 100%;
-	height: 565px;
+	height: auto;
 }
 .carousel-caption {
+	font-family: 'Pacifico', cursive;
 	text-align: left;
+	color: #fff68f;
 	left: 0;
-	top: 2%;
+	top: 10%;
 	width: 50%;
 	margin-left: 15%
 }
@@ -64,13 +68,20 @@ a{
 	font-size: 5em;
 }
 
-.btn-outline-success {
+.btn-outline-dark {
 	color: #fff;
 	border-color: #fff;
 	border-radius: 20px;
 }
+.card{
+	width: 22rem;
+	height: 25rem;
+}
 .card:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+}
+.card-img-top{
+	height: 10rem;
 }
 
 .zoom{
@@ -179,6 +190,7 @@ footer ul li a {
     margin-bottom: 15px;
     margin-top: 20px;
 }
+
 .h3, h3 {
     font-size: 24px;
 }
@@ -227,7 +239,23 @@ table {
     width: 115px;
     color: #aaa;
 }
+<<<<<<< HEAD
 
 .flex-column{
     width: 115px;
 }
+=======
+.bunder{
+	border: 2px solid #e5e5e5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10px;
+	height: 300px;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: 50%;
+	margin: auto;
+	background-repeat: no-repeat;
+}
+>>>>>>> d5a2b86ce25facba66089faae3b96a2a395715b7
