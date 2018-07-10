@@ -241,8 +241,31 @@ table {
 }
 <<<<<<< HEAD
 
-.flex-column{
-    width: 115px;
+.login{
+    background: #212529;
+    background-size: 115px;
+    width: 100px;
+    padding-top: 15px !important;
+    margin-top: 15px;
+}
+
+.login img{
+    width: 250px;
+    padding-top: 20px;
+}
+
+.login h3{
+    color: white;
+    margin-top: 20px;
+}
+
+.login label{
+    color: white;
+    margin-top: 20px;
+}
+
+.login button{
+    margin-top: 25px;
 }
 =======
 .bunder{
