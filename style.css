@@ -129,6 +129,7 @@ a{
 	border-radius: 20px;
 	border-color: transparent;
 }
+
 footer .copyright {
     padding: 15px 0;
 }
@@ -225,4 +226,8 @@ table {
 .table-title {
     width: 115px;
     color: #aaa;
+}
+
+.flex-column{
+    width: 115px;
 }
