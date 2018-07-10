@@ -11,7 +11,8 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
   <a class="navbar-brand" href="index.html"><img src="img/logo.png" width=150></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -19,36 +20,46 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link ml-3" href="#">Home</a>
+        <a class="nav-link ml-3" href="Index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ml-3" href="#">Link</a>
+        <a class="nav-link ml-3" href="daftarbimbel.html">Reguler</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ml-3" href="#">Link</a>
+        <a class="nav-link ml-3" href="daftarprivat.html">Privat</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ml-3 mr-3" href="#">Link</a>
+        <a class="nav-link ml-3" href="#">Daftar Iklan Gratis</a>
       </li>
     </ul>
-    <ul class="nav navbar-nav pull-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <div class="img-rounded profile-img"></div>
-                       <span class="caret"></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a class="dropdown-item" href="profil.html">Halaman Profil</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="index.html">Log Out</a>
-                    </div>
-                </li>
-            </ul>  
-      
-</div>
+    <form class="form-inline ml-3">
+      <button class="btn btn-sm btn-secondary" type="button" data-toggle="modal" data-target="#login">Login User</button>
+    </form>
+  </div>
 </nav>
 
-<div class="profile-container container col-md-6 col-sm-6 col-xs-12">
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+            <p class="login-description">Silahkan login lewat :</p>
+          <a href="loginprofil.html" type="button" class="btn btn-google"><i class="fab fa-google"></i>  Sign whith Google</a><br>
+            <div class="separator">
+              <div class="strike">
+                <span>atau</span>
+              </div>
+            </div>
+          <a href="loginprofil.html" type="button" class="btn btn-fb"><i class="fab fa-facebook-square"></i>  Sign whith Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="profile-container container col-md-6 col-sm-6 col-xs-12">
     <div class="col-xs-12">
       <h3 class="section-title">Feedback</h3>
     </div> 
