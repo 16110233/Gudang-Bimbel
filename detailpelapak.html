@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Gudang Bimbel|Detail Pelapak</title>
+  <title>Gudang Bimbel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,8 +11,8 @@
 </head>
 
 <body>
-<!-- navbar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
   <a class="navbar-brand" href="index.html"><img src="img/logo.png" width=150></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -20,23 +20,24 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link ml-3" href="#">Home</a>
+        <a class="nav-link ml-3" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ml-3" href="#">Link</a>
+        <a class="nav-link ml-3" href="daftarbimbel.html">Reguler</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ml-3" href="#">Link</a>
+        <a class="nav-link ml-3" href="daftarprivat.html">Privat</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ml-3" href="#">Link</a>
+        <a class="nav-link ml-3" href="#">Daftar Iklan Gratis</a>
       </li>
     </ul>
     <form class="form-inline ml-3">
       <button class="btn btn-sm btn-secondary" type="button" data-toggle="modal" data-target="#login">Login User</button>
     </form>
-  </div></nav>
-<!-- modal login -->
+  </div>
+</nav>
+
   <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -57,101 +58,108 @@
       </div>
     </div>
   </div>
-  <!-- gambar obah -->
-<div class="detail_pelapak">
-
-    <main role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron" style="background: url(img/cobim1.jpg); background-size: cover; height: 530px; margin-bottom: 0px;">
-        <div class="container-cover">
-          <div class="container info-action" style="text-align: right">
-            <button class='btn btn-primary' style="color: rgba(255,255,255,.8);">
-              Laporkan Bimbel
-            </button>
-            <div class="container info-section" style="text-align: left; padding-top: 200px;">
-              <h1><strong>Bimbel Bulan Bintang Bumi</strong></h1>
+  
+  <div class="container my-4">
+    
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h1 class="bold clear-top">Profil Lembaga Bimbingan Belajar Neutron Yogyakarta</h1>
+                  <dl class="dl-horizontal">
+                    <dt>Nama Perusahaan:</dt>
+                    <dd>Lembaga Bimbingan Belajar Neutron Yogyakarta</dd>
+                                          <dt>Negara:</dt>
+                      <dd>Indonesia</dd>
+                                                                                  <dt>Sub Industri :</dt>
+                      <dd>Education &amp; Training</dd>
+                                      </dl>
+                  <hr>
+                                      <div class="row">
+                                                                </div>
+                    <div class="modal fade" id="companyOfficeGallery" tabindex="-1" role="dialog" aria-labelledby="companyGalleryLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <span class="modal-caption">
+                              <button class="close pull-right" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                            </span>
+                          </div>
+                          <div class="modal-body">
+                            <img id="img-modal" class="center-block" src="">
+                            <div class="row half-space">
+                              <div class="col-xs-12">
+                                <p id="modal-caption"></p>
+                              </div>
+                              <div class="col-xs-4">
+                                <button class="btn btn-info btn-small btn-gallery-prev">&lt;</button>
+                              </div>
+                              <div class="col-xs-4 text-center">
+                                <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                              </div>
+                              <div class="col-xs-4 text-right">
+                                <button class="btn btn-info btn-small btn-gallery-next">&gt;</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                      <iframe class="hidden-xs" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDmNP5ugIPdjH22li4pWBsq0I96lFObEQQ&amp;q=Jl.%20Taman%20Siswa%20Gg.%20Trustha%20Jumena%20Yogyakarta" width="100%" height="308" frameborder="0"></iframe>
+                    <hr>
+                                  </div>
+                                  <div class="col-6">
+                                          <h3 class="bold">
+                        <i class="fa fa-map-marker red"></i>
+                        Lokasi
+                      </h3><span>Jl. Taman Siswa Gg. Trustha Jumena Yogyakarta</span>                                                          </div>
+                                                  <div class="col-6 float-right">
+                                          <h3 class="bold">
+                        <i class="fa fa-phone red"></i>
+                        No. Telepon
+                      </h3>
+                                              <span>0274450300</span>
+                        <br>
+                                                                                    <h3 class="bold">
+                        <i class="fa fa-globe red"></i>
+                        Website
+                      </h3>
+                      <a href="http://www.neutron-ny.com/" target="_blank">http://www.neutron-ny.com/</a>
+                                      </div>
+                              </div>
             </div>
-          </div>
-      </div>
-    </div>
-</div>
-
-  <nav class="navbar navbar-light bg-light" style="padding-top: 0px">
-    <div class="col-md-8">
-      <span class="navbar-brand mb-0 h1">Informasi Bimbel</span>
-      <span class="navbar-brand mb-0 h1">Review</span>
-      <span class="navbar-brand mb-0 h1">Verifikasi</span>
-    </div>
-    <div class="col-md-4" style="background-color: #212529">
-      <span class="navbar-brand mb-0 h1" style="color: #fff">Paket Bimbel/ Private</span>
-    </div>
-  </nav>
-
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row" style="padding-top: -20px;">
-          <div class="col-md-8">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-
-        <hr>
-
-      </div> <!-- /container -->
-
-    </main>
-
-</div>
-
+          
+  </div>
 
 <footer class="footer"  data-background-color="black">
   <div class="container">
     <nav class="float-left">
       <ul>
         <li>
-          <a href="">
-              Cara
-          </a>
-        </li>
-        <li>
-          <a href="">
+          <a href="tentangkami.html">
               Tentang Kami
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="faq.html">
+              FAQ
+          </a>
+        </li>
+        <li>
+          <a href="privacy.html">
               Privacy
           </a>
         </li>
         <li>
-          <a href="">
-              Licenses
+          <a href="hubungikami.html">
+              Hubungi Kami
+          </a>
+        </li>
+        <li>
+          <a href="feedback.html">
+              Feedback
           </a>
         </li>
       </ul>
@@ -161,7 +169,6 @@
     </div>
   </div>
 </footer>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
